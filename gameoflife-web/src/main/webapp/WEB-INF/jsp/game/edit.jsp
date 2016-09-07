@@ -90,12 +90,12 @@
 <div class="intro">Please seed your universe</div>
 <div class="griddisplay">
     <form action="${startPage}" method="get">
-        <input type="hidden" name="rows" value="3"/>
-        <input type="hidden" name="columns" value="3"/>
+        <input type="hidden" name="rows" value="9"/>
+        <input type="hidden" name="columns" value="9"/>
         <table id="grid">
-            <c:forEach begin="0" var="row" end="2">
+            <c:forEach begin="0" var="row" end="9">
                 <tr>
-                    <c:forEach begin="0" var="column" end="2">
+                    <c:forEach begin="0" var="column" end="9">
                         <td><input name="cell_${row}_${column}" type="checkbox"/></td>
                     </c:forEach>
                 </tr>
